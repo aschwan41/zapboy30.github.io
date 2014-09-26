@@ -2,83 +2,128 @@
 <!--Last Space Sandwich Studio Website-->
 <!--Made by Pace Marier-->
 <!--Please do not copy-->
-<html>
+<html lang="en">
   <head>
-    <!--General Optimization-->
+    <!-- Optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Search Engine Optimization-->
     <title>Last Space Sandwich - Home</title>
     <meta name="description" content="The indie game development studio, Last Space Sandwich."/>
-    <!--Stylesheets-->
-    <!--<link href='style.css' rel='stylesheet'>-->
-    <link href="shift.css" rel="stylesheet">
     <link href="bootstrap.css" rel="stylesheet">
+    <link href="shift.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
     <!--Menu Bar-->
     <div class="nav">
       <div class="container">
-        <ul class="pull-left">
-          <li><a href="index.html"><button type="button" class="btn btn-default btn-xs active">Home</button></a></li>
-          <li><a href="games.html"><button type="button" class="btn btn-default btn-xs">Games</button></a></li>
+        <ul class="nav navbar-nav pull-left">
+          <li><img class="durr" src="img/logo.png"></li>
+          <li><h4 class="dilly">Last Space Sandwich Studio</h4></li>
+          <h5 class="dally">We Make Games Sometimes</h5>
         </ul>
-        <ul class="pull-right">
-          <li><a href="about-andrew.html"><button type="button" class="btn btn-default btn-xs">Andrew</button></a></li>
-          <li><a href="about-pace.html"><button type="button" class="btn btn-default btn-xs">Pace</button></a></li>
-          <li><a href="contact.html"><button type="button" class="btn btn-default btn-xs">Contact</button></a></li>
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Andrew <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about-andrew.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pace <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="about-pace.html">About</a></li>
+                <li><a href="http://pace.spacesandwich.me">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
-    <!-- Main body -->
+    <!-- Image Carousel (This Was A Major Pain In The Ass) -->
     <div>
-      <div class="jumbotron">
-        <div class="icon-menu">
-        </div>
-      <!--Site Logo & Title-->
-        <div class="container">
-          <img src="img/logo.png"/>
-          <p style="font-size:24px"><b>Last Space Sandwich Studio</b></p>
-          <p>We make games sometimes.</p>
-        </div>
-      </div>
-      <!--Images & Text Frame-->
       <div class="angry-carrot">
-        <div class="container">
-              <!--About Section Text Frame-->
-              <h2>Welcome!</h2>
-              <p>Last Space Sandwich Studio is an indie game developer team based in</p>
-              <p>the Ottawa Valley. We currently only participate in game jams, but we may</p>
-              <p>eventually make a full fledged game. Our intergalactic crew consists of</p>
-              <p>Andrew Schwan, Pace Marier, and occasionally the bizzare Dawson Cuff.</p>
-            <!--Game images frame-->
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <div class="thumbnail">
-                  <a href="http://itch.io/jam/the-neo-jam/">
-                    <img src="img/NEO.bmp"/>
-                  </a>
+
+         <div class="row">
+          <div class="col-centered">
+            <div id="slideshow" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#slideshow" data-slide-to="1"></li>
+                <li data-target="#slideshow" data-slide-to="2"></li>
+                <li data-target="#slideshow" data-slide-to="3"></li>
+                <li data-target="#slideshow" data-slide-to="4"></li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="item active">
+                 <a href="http://spacesandwich.me">
+                  <img src="img/stock1.jpg">
+                 </a>
+                  <div class="carousel-caption">
+                    Last Space Sandwich Studio
+                  </div>
+                </div>
+                <div class="item">
+                 <a href="http://fancywalrus.itch.io/snow">
+                  <img src="img/stock2.jpg">
+                 </a>
+                  <div class="carousel-caption">
+                    <a style="color:white" href="#"></a>
+                  </div>
+                </div>
+                <div class="item">
+                 <a href="http://fancywalrus.itch.io/epic-dungeon-quest">
+                  <img src="img/stock3.jpg">
+                 </a>
+                  <div class="carousel-caption">
+                    <a style="color:white" href="#"></a>
+                  </div>
+                </div>
+                <div class="item">
+                 <a href="http://itch.io/jam/the-neo-jam">
+                  <img src="img/stock4.jpg">
+                 </a>
+                  <div class="carousel-caption">
+                    <a style="color:white" href="#"></a>
+                  </div>
+                </div>
+                <div class="item">
+                 <a href="http://fancywalrus.itch.io/elevatr">
+                  <img src="img/stock5.jpg">
+                 </a>
+                  <div class="carousel-caption">
+                    <a style="color:white" href="#"></a>
+                  </div>
                 </div>
               </div>
-              <!--<div class="col-md-4">
-                <div class="thumbnail">
-                  <a href="http://fancywalrus.itch.io/snow">
-                    <img src="img/SNO.bmp"/>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="thumbnail">
-                  <a href="http://www.ludumdare.com/compo/ludum-dare-30/?action=preview&uid=39779">
-                    <img src="img/VTR.bmp"/>
-                  </a>
-              </div>-->
+              <a class="left carousel-control" href="#slideshow" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#slideshow" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
             </div>
           </div>
         </div>
+     <div class="learn-more">
+      <div class="container">
+            <!-- About Section -->
+            <h2>Welcome!</h2>
+            <p>Last Space Sandwich Studios is a experimental team of highschool students based in</p>
+            <p>the Ottawa Valley. We've always loved trying new things so we created this group to</p>
+            <p>experiment. Thus far we've participated in multiple game jams and we're currently trying</p>
+            <p>other mediums of media as well. Our intergalactic crew consists of Pace Marier,</p>
+            <p>Andrew Schwan, and occasionally the bizzare man known as Dawson Cuff. Here we'll</p>
+            <p>post interesting things we've tried and experienced. Who knows what we could do next!</p>
       </div>
      </div>
+
+  </div>
   </body>
+  <!-- Page Footer -->
   <footer>
     <div class="footer">
       <div class="container">
@@ -89,11 +134,15 @@
         <ul class="pull-right">
           <li>Website made by Pace D. Marier -</li>
           <li> Contact:</li>
-          <li><a href="mailto:pacemarier@spacesandwich.me">pacemarier@spacesandwich.me</a>.</li>
+          <li><a href="mailto:pacemarier99@hotmail.com">pacemarier@hotmail.com</a>.</li>
         </ul>
       </div>
     </div>
   </footer>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="docs.min.js"></script>
 </html>
 <!--But seriously, don't copy my code.-->
 <!--Thats just uncool to the extreme-->
